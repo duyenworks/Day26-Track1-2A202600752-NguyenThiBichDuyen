@@ -8,7 +8,7 @@
 
 ## Bước 1 — Tìm deal fundraising AI
 
-> ## 1.1. Deal Case Brief
+> ## <mark>1.1. Deal Case Brief<mark>
 
 | Field | Bạn điền gì |
 | :--- | :--- |
@@ -80,7 +80,7 @@
 
 > **Giai đoạn idea hiện tại:** Pre-idea → ưu tiên investor **pre-seed/seed** (500 Global, Antler, Techstars) trước; **Series A** (Do Ventures, Insignia) là mục tiêu sau khi có MVP + pilot.
 
-### Investor Mapping Table
+### <mark>Investor Mapping Table<mark>
 
 | Investor / Quỹ | Loại investor | Sector & stage họ tập trung | Ticket size điển hình | Vì sao fit với idea của bạn? | Nguồn |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -145,3 +145,88 @@
 | **Vì sao nên / không đầu tư?** | **Nên:** category đã được validate qua WIZ.AI; Insignia hiểu voice/conversational AI. <br>**Không nên:** nếu không differentiate vs WIZ.AI; hoặc nếu chưa có enterprise pilot — quá sớm cho Insignia (target sau Seed). |
 
 ---
+
+## Bước 3 — Viết Market Positioning Memo
+
+### Câu hỏi trung tâm
+
+> <mark>*Idea của tôi có fundable trong bối cảnh gọi vốn hiện tại không, và tôi cần bằng chứng gì để chứng minh điều đó?*<mark>
+
+**Kết luận ngắn:** Idea **có fundable potential** vì nằm đúng xu hướng **AI agent / vertical AI B2B** đang được capital chảy vào (162 deal, $3.8B tới 2024), và đã có comparable deal **WIZ.AI Series B** validate category tại SEA. Tuy nhiên, ở giai đoạn **pre-idea**, idea **chưa fundable ngay** — cần MVP + pilot trước khi gọi vốn institutional. Bối cảnh VN/SEA hiện tại khó hơn 2021 (deal value/count giảm ~30%, check size co lại 2023–2025), nên phải vào đúng investor (Antler, 500 Global) và chứng minh unit economics sớm, không pitch mơ hồ "dùng AI".
+
+---
+
+### Bối cảnh thị trường (data tham chiếu)
+
+| Signal thị trường | Ý nghĩa cho idea |
+| :--- | :--- |
+| VN VC deal value & count giảm ~30% cuối 2025 vs đỉnh 2021 | Không thể dựa vào "hot market" — investor chọn lọc hơn, cần traction + financials rõ |
+| Check size trung bình co lại (2023 → 2025) | Vòng pre-seed/seed realistic: **$85K–$500K**, không expect round lớn sớm |
+| Sector heatmap: Ecommerce, Edtech, Climate Tech nhiều deal | Voice AI không top sector VN, nhưng không phải red ocean như consumer |
+| **AI agent funding tăng mạnh:** 162 deal, **$3.8B** tới 2024 | Tailwind cho category — investor đang học và deploy capital vào agent/workflow automation |
+| YC RFS: **AI-Native Service Companies**, Software for Agents | Khớp positioning: AI-native service layer cho customer ops, không phải chatbot wrapper |
+
+**Positioning statement:** Vertical AI SaaS — voice agent platform B2B cho customer operations tại SEA, wedge ban đầu **Việt Nam** (tiếng Việt + dialect, tích hợp CRM/call center local), mở rộng SEA sau khi có playbook.
+
+**Differentiation cần chứng minh (tránh "we're using AI"):** (1) localization VN/SEA vượt global model, (2) integration sâu với workflow enterprise (CRM, PBX, QA), (3) ROI đo được trên cost/call thay vì demo accuracy.
+
+---
+
+### <mark>Unit economics sơ bộ *(estimate — chưa có data thật)*<mark>
+
+**Mô hình giả định:** B2B subscription + usage — 1 khách hàng enterprise mid-market (vd. telco/e-commerce VN có call center 20–50 agents).
+
+| Hạng mục | Ước tính/tháng | Giả định |
+| :--- | ---: | :--- |
+| **Doanh thu/khách** | **$3,500** | Platform fee $2,000 + usage ~30,000 phút × $0.05/phút = $1,500 |
+| Chi phí LLM/STT/TTS | $900 | ~$0.03/phút blended API cost × 30,000 phút |
+| Chi phí telephony/infra | $350 | SIP trunk, recording, storage |
+| Onboarding & support (amortized) | $450 | 2–3 ngày setup + CS monthly, chia cho 12 tháng |
+| **Tổng chi phí phục vụ/khách** | **$1,700** | |
+| **Contribution margin** | **$1,800 (~51%)** | $3,500 − $1,700 |
+
+**So sánh value prop:** Human agent VN cost ~$400–600/tháng × 20 agents = $8,000–12,000/tháng cho cùng volume cơ bản. Nếu voice agent xử lý 40% volume (12,000 phút automation) → tiết kiệm ~$3,000–5,000/tháng cho khách → pricing $3,500 có room nếu chứng minh được resolution rate ≥70%.
+
+*Lưu ý: Tất cả số trên là estimate pre-product; cần validate bằng 1–2 paid pilot trước khi dùng trong pitch deck.*
+
+---
+
+### <mark>Cash needs *(estimate — milestone: pre-idea → Seed-ready)*<mark>
+
+| Hạng mục | Chi phí 12 tháng | Ghi chú |
+| :--- | ---: | :--- |
+| Engineering (2 FTE, VN) | $96,000 | ~$4,000/tháng × 2 × 12 |
+| Product / GTM (1 FTE) | $36,000 | Founder + 0.5 sales/CS |
+| Cloud + AI API (dev & pilot) | $24,000 | ~$2,000/tháng |
+| Legal, ops, buffer | $14,000 | |
+| **Tổng cash needs** | **~$170,000** | ~14 tháng runway mục tiêu |
+
+**Milestone cần đạt với số tiền này:** MVP voice agent (1 use case: nhắc thanh toán hoặc inbound FAQ) → 3 design partner → 1 paid pilot → sẵn sàng gọi pre-seed/seed **$250K–$400K**.
+
+---
+
+### <mark>KPI tới vòng tiếp theo *(Pre-seed/Seed → Seed/Series A)*<mark>
+
+Trước khi gọi vòng kế tiếp (target sau 12–15 tháng), cần đạt **2 KPI chính**:
+
+| KPI | Target | Vì sao investor care |
+| :--- | :--- | :--- |
+| **1. MRR** | **$15,000+** (≥5 khách trả phí hoặc 3 enterprise × ~$5K) | Chứng minh willingness-to-pay, không chỉ pilot miễn phí |
+| **2. Automation outcome** | **≥70% call resolution** + **≥30% cost reduction** vs baseline call center (đo trên ≥10,000 phút/tháng tổng) | Chứng minh AI tạo ROI thật — tránh bẫy "Unclear differentiation" |
+
+KPI phụ (supporting): 1 integration CRM/call center live (HubSpot/Zoho hoặc PBX local); retention pilot-to-paid ≥60%; gross margin ≥45% trên paid customers.
+
+---
+
+### Fundable hay chưa — và bằng chứng cần có
+
+| Giai đoạn | Fundable? | Bằng chứng cần |
+| :--- | :--- | :--- |
+| **Hiện tại (pre-idea)** | **Chưa** — quá sớm cho institutional VC | Problem interview 10+ enterprise, 1 use case wedge chọn rõ (không "platform cho mọi thứ") |
+| **Sau Antler/residency (~6 tháng)** | **Có thể** — pre-seed $85K–$400K | MVP demo + 2 design partner LOI |
+| **Seed (~12 tháng)** | **Có** — nếu đạt KPI trên | $15K MRR, 70% resolution, 1 integration, unit economics slide |
+| **Series A (~24 tháng)** | **Có điều kiện** — cần differentiate vs WIZ.AI | $50K+ MRR, 3+ enterprise logos VN, playbook mở rộng SEA |
+
+**Rủi ro cần acknowledge:** (1) WIZ.AI và Insignia đã vào space — competitive pressure; (2) VN VC market co lại — phải capital-efficient; (3) Enterprise sales cycle dài — cần wedge hẹp (vd. collections cho fintech VN) thay vì full platform day one.
+
+**Chiến lược gọi vốn phù hợp bối cảnh hiện tại:** Không chase round lớn. Vào **Antler residency** hoặc **500 Global** với narrative "AI-native service company for SEA customer ops" — đúng YC RFS trend — và mang theo unit economics estimate + pilot plan cụ thể, không pitch vision mơ hồ.
